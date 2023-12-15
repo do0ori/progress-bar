@@ -28,7 +28,7 @@ body {
 #count-display {
     display: none;
     position: absolute;
-    top: 30px;
+    top: -40px;
     right: 0;
     transform: translateX(50%);
     background-color: #333;
