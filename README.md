@@ -7,7 +7,9 @@ notion에 강의를 들으며 정리를 하는데 강의 진행률을 시각화�
 ## Usage
 🔗[Progress Bar 바로가기](https://do0ori.github.io/progress-bar/)
 
-![Alt text](progress-bar-site.png)
+![progress-bar-site](progress-bar-site.gif)
+
+![progress-bar-widget-in-notion](progress-bar-widget-in-notion.gif)
 
 | progress bar 클릭 위치 | 동작 |
 | --- | --- |
@@ -16,9 +18,9 @@ notion에 강의를 들으며 정리를 하는데 강의 진행률을 시각화�
 | 가운데 | total 숫자 설정 |
 
 ## Key Features
-- 공간 차지 적습니다.
+- 공간 차지가 적습니다.
 - 필요한 기능만 넣었습니다.
-- 이식성이 높습니다.
+- 쉽게 사용 가능하고 이식성이 높습니다.
 - LocalStorage에 데이터를 저장하여 domain별로 반영구적으로 unique하게 사용 가능합니다.
 
 ## Technology Stack
