@@ -52,3 +52,29 @@ body {
 #progress-container:hover #count-display {
     display: block;
 }
+
+#context-menu {
+    display : none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    /* padding: 10px; */
+}
+
+.context-menu-item {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px;
+}
+
+.context-menu-item:hover {
+    background-color: #ccc;
+}
+
+#bar-color-reset-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
