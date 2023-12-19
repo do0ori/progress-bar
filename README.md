@@ -13,9 +13,14 @@ notion에 강의를 들으며 정리를 하는데 강의 진행률을 시각화�
 
 | progress bar 클릭 위치 | 동작 |
 | --- | --- |
-| 왼쪽 | -1 |
-| 오른쪽 | +1 |
+| 왼쪽 | progress 감소 (-1) |
+| 오른쪽 | progress 증가 (+1) |
 | 가운데 | total 숫자 설정 |
+
+| context menu (progress bar 우클릭) | 동작 |
+| --- | --- |
+|Reset progress to 0| progress를 0으로 초기화 |
+|Bar color| progress bar 색상 설정 (⟳ 버튼으로 초기화) |
 
 ## Key Features
 - 공간 차지가 적습니다.
