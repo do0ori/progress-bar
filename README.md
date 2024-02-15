@@ -36,4 +36,4 @@ notion에 강의를 들으며 정리를 하는데 강의 진행률을 시각화�
 </p>
 
 ## Contributions
-버그를 발견하거나 새로운 기능을 제안은 언제나 환영입니다! [이슈](https://github.com/do0ori/progress-bar/issues)를 작성해주세요.
+버그를 발견하거나 새로운 기능을 제안하는 것은 언제나 환영입니다! [이슈](https://github.com/do0ori/progress-bar/issues)를 작성해주세요.
