@@ -1,11 +1,11 @@
-const totalKey = "total";
-const progressKey = "progress";
-const barColorKey = "barColor";
+const TOTAL_KEY = "total";
+const PROGRESS_KEY = "progress";
+const BAR_COLOR_KEY = "barColor";
 
 document.addEventListener("DOMContentLoaded", function () {
-    let total = parseInt(localStorage.getItem(totalKey)) || 1;
-    let progress = parseInt(localStorage.getItem(progressKey)) || 0;
-    let barColor = localStorage.getItem(barColorKey) || "#4CAF50";
+    let total = parseInt(localStorage.getItem(TOTAL_KEY)) || 1;
+    let progress = parseInt(localStorage.getItem(PROGRESS_KEY)) || 0;
+    let barColor = localStorage.getItem(BAR_COLOR_KEY) || "#4CAF50";
     const progressContainer = document.getElementById("progress-container");
     const progressBar = document.getElementById("progress-bar");
     const countDisplay = document.getElementById("count-display");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!isNaN(newTotal) && newTotal > 0 && newTotal !== total) {
             total = newTotal;
-            localStorage.setItem(totalKey, total);
+            localStorage.setItem(TOTAL_KEY, total);
             totalInput.value = total;
             resetProgress();
         }
@@ -42,14 +42,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const resetBarColor = () => {
         barColor = barColorPicker.value = "#4CAF50";
-        localStorage.setItem(barColorKey, barColor);
+        localStorage.setItem(BAR_COLOR_KEY, barColor);
         updateBarColor();
     };
 
     const decreaseProgress = () => {
         if (progress > 0) {
             progress--;
-            localStorage.setItem(progressKey, progress);
+            localStorage.setItem(PROGRESS_KEY, progress);
             resetProgress();
         }
     };
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const increaseProgress = () => {
         if (progress < total) {
             progress++;
-            localStorage.setItem(progressKey, progress);
+            localStorage.setItem(PROGRESS_KEY, progress);
             resetProgress();
         }
     };
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const handlBarColor = () => {
         barColor = barColorPicker.value;
-        localStorage.setItem(barColorKey, barColor);
+        localStorage.setItem(BAR_COLOR_KEY, barColor);
         updateBarColor();
     };
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     document.getElementById("reset-progress").addEventListener("click", () => {
         progress = 0;
-        localStorage.setItem(progressKey, progress);
+        localStorage.setItem(PROGRESS_KEY, progress);
         resetProgress();
     });
     barColorPicker.addEventListener("change", handlBarColor);
